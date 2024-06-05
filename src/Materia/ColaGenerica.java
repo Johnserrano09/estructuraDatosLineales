@@ -15,7 +15,7 @@ public class ColaGenerica <T> {
         this.size = 0;
     }
 
-    /////
+    /////uihhghj
     public void addNode(T data){
         NodoGenerico<T> nuevonode=new NodoGenerico<>(data);
         if (isEmpty()){
