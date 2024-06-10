@@ -1,5 +1,5 @@
 ## Autores
--Andres Roldan
 -John Serrano
+-Jose Vanegas
 
 

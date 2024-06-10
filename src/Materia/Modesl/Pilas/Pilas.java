@@ -18,7 +18,7 @@ public class Pilas {
         top = nuevoNodo;
 
     }
-/////////////
+//// Elimina el elemento
     public int pop(){
         if (top == null) {
             System.out.println("la pila esta vacia");
@@ -31,7 +31,7 @@ public class Pilas {
         }
 
     }
-//////////////
+/// MIRA EL ELEMENTO
     public int peek(){
         if (top == null) {
             System.out.println("la pila esta vacia");
@@ -40,7 +40,7 @@ public class Pilas {
         return top.value;
 
     }
-    ///////////
+    /// cOMPRUEBA SI ESTA VACIO
     public boolean isEmpty(){
         return top == null;
     }
