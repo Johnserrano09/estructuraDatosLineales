@@ -1,13 +1,16 @@
+import java.util.LinkedList;
 import java.util.Stack;
 
 import Materia.Cola;
 import Materia.ColaGenerica;
 import Materia.Ejercicio_01_sign.SingValidator;
 import Materia.Ejercicio_02_sorting.StackSorter;
+import Materia.Ejercicio_03_linkedLists.LinkedListsEjr;
 import Materia.ListasEnlazadas.ListaEnlazada;
 import Materia.Modesl.Pantalla;
 import Materia.Modesl.Pilas.PilaGenerica;
 import Materia.Modesl.Pilas.Pilas;
+import Materia.Modesl.ListaEnlazadaGenerica;
 import Materia.Modesl.Node;
 
 public class App {
@@ -122,6 +125,46 @@ public class App {
         lista.addNode(3);
         lista.addNode(6);
         lista.print();
+        lista.deleteNode(6);
+        lista.print();
+        lista.deleteNode(1);
+        lista.print();
+        lista.deleteNode(3);
+        lista.print();
+
+
+        ListaEnlazadaGenerica<Integer> listaEnteros = new ListaEnlazadaGenerica<>();
+
+        // Agregar nodos a la lista
+        listaEnteros.addNode(1);
+        listaEnteros.addNode(2);
+        listaEnteros.addNode(3);
+        listaEnteros.addNode(4);
+        listaEnteros.addNode(5);
+
+        // Imprimir la lista
+        System.out.println("Lista original:");
+        listaEnteros.print();
+
+        // Eliminar un nodo de la lista
+        listaEnteros.deleteNode(2);
+
+        // Imprimir la lista después de eliminar un nodo
+        System.out.println("Lista después de eliminar 2:");
+        listaEnteros.print();
+
+        ///
+        System.out.println("-------------------------------------------------------");
+        LinkedListsEjr lista3 = new LinkedListsEjr();
+        lista3.addNode2(1);
+        lista3.addNode2(2);
+        lista3.addNode2(5);
+        lista3.addNode2(7);
+        lista3.addNode2(6);
+
+        int posicion = 1;
+        int resultado = lista3.getByPoss(posicion);
+        System.out.println("El nodo en la posicion "+ posicion +" desde el final es: "+ resultado);
 
 
     }
